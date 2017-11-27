@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pl"
+		xmlns:th="http://www.thymeleaf.org">
+		
+<head>
+	<title>Sympozjum KG PAN</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="1. Sympozjum Komitetu Geodezji Polskiej Akademii Nauk pt. 'Monitorowanie dynamiki Ziemi w ramach systemu GGOS', 27-29 września 2017 | Warszawa"/>
+	<meta name="keywords" content="PAN, sympozjum, Robotix"/> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="author" content="Robotix"/>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link href="../static/style/index.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
+<!-- 	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="www.kgpan-sympozjum2017.pl/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="www.kgpan-sympozjum2017.pl/favicon.ico" type="image/x-icon"/>
+	<link href="/favicon.ico" type="image/x-icon"/> 
+	-->
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=dLmOBKQdKX"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=dLmOBKQdKX"/>
+	<link rel="shortcut icon" href="/favicon.ico?v=dLmOBKQdKX"/>
+	<!-- 
+	<link rel="manifest" href="/manifest.json?v=dLmOBKQdKX"/>
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=dLmOBKQdKX" color="#5bbad5"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=dLmOBKQdKX"/>	
+	<meta name="theme-color" content="#ffffff"/> -->
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="menu">
+			<div class="mobileMenu">
+				<div class="mobileMenu__header">			
+					<div class="mobileMenu__info"> 
+						<p>27-29 września 2017</p>
+						<p>Warszawa</p>
+					</div>
+					<img id="mobileMenuIcon" class="mobileMenu__icon" src="../static/images/mobile_menu.png"/> 
+				</div>
+				<ul id="mobileMenuOpened" class="mobileMenu__list">
+					<li><a class="menu__link mobileMenu__link" href="#home">Start</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#venue">Lokalizacja</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#comitees">Komitety</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#programme">Program</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#register">Rejestracja</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#accommodation">Zakwaterowanie</a></li>
+					<li><a class="menu__link mobileMenu__link" href="#contact">Kontakt</a></li>
+				</ul>
+			</div>	
+			<div class="navbar">
+				<ul class="navbar__list">
+					<li><a class="menu__link navbar__link" href="#home">Start</a></li>
+					<li><a class="menu__link navbar__link" href="#venue">Lokalizacja</a></li>
+					<li><a class="menu__link navbar__link" href="#comitees">Komitety</a></li>
+					<li><a class="menu__link navbar__link" href="#programme">Program</a></li>
+					<li><a class="menu__link navbar__link" href="#register">Rejestracja</a></li>
+					<li><a class="menu__link navbar__link" href="#accommodation">Zakwaterowanie</a></li>
+					<li><a class="menu__link navbar__link" href="#contact">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section class="section home" id="home">
+		<div class="home__box">
+			<div class="home__header">
+				<h1 class="headerFirst">Monitorowanie dynamiki Ziemi w ramach systemu GGOS</h1> 
+				<h2 class="headerSecond">1. Sympozjum Komitetu Geodezji Polskiej Akademii Nauk</h2>
+				<h3 class="headerThird">27-29 września 2017 | Warszawa</h3>
+				<p class="home__text">Organizatorzy:</p>
+				<div class="logo">
+					<a href="http://www.pan.pl/" target="_blank"><img class="logo__pan" src="../static/images/LOGO_PAN_PL.png" alt="pan"/></a>
+					<a href="http://www.wat.edu.pl/" target="_blank"><img class="logo__wat" src="../static/images/LOGO_WAT_PL.png" alt="wat"/></a>
+					<a href="http://www.uwm.edu.pl/" target="_blank"><img class="logo__uwm" src="../static/images/LOGO_UWM.jpeg" alt="uwm"/></a>
+					<a href="http://www.upwr.edu.pl/" target="_blank"><img class="logo__uwm" src="../static/images/LOGO_UPWr.png" alt="upwr"/></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section" id="keyDates">
+		<h4 class="headerFourth">terminy</h4>
+		<div class= "box keyDatesBox" id="keyDatesBox">
+			<div class="keyDatesBox__container">
+				<div class="keyDatesBox__header"><p class="title__text  title__text_white">11 sierpnia 2017</p></div>
+				<div class="keyDatesBox__content"><p class="keyDatesBox__contentText">Zgłoszenie streszczeń referatów</p></div>
+			</div>
+			<div class="keyDatesBox__container">
+				<div class="keyDatesBox__header"><p class="title__text  title__text_white">11 sierpnia 2017</p></div>
+				<div class="keyDatesBox__content"><p class="keyDatesBox__contentText">Rejestracja uczestników</p></div>
+			</div>
+			<div class="keyDatesBox__container">
+				<div class="keyDatesBox__header"><p class="title__text  title__text_white">18 sierpnia 2017</p></div>
+				<div class="keyDatesBox__content"><p class="keyDatesBox__contentText">Uiszczenie opłaty rejestracyjnej</p></div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section section_grey" id="venueSection">
+		<a class="venue" id="venue"></a>
+		<h4 class="headerFourth">lokalizacja</h4>
+		<div class="box venueBox">
+			<div class="venueBox__content map" id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78182.42049711355!2d20.906272415781796!3d52.23973920424855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE1JzA0LjkiTiAyMMKwNTMnNTYuNiJF!5e0!3m2!1spl!2spl!4v1494279911528" width="470" height="250" style="border:0"></iframe>
+			</div>
+			<div class="venueBox__content directions" id="directions">
+				<div class="directions__address">
+					<p class="directions__WAT">Wojskowa Akademia Techniczna</p>
+					<p>ul. Gen. Sylwestra Kaliskiego 2B</p>
+					<p>00-908 Warszawa</p>
+					<p class="find">Bud. nr 135 (teren otwarty WAT)</p>
+					<p class="find"><img class="directions__img" src="../static/images/location2.jpg"/>52.253162, 20.899566</p>
+					<a class="directions__link" href="http://www.wat.edu.pl/" target="_blank">Odwiedź stronę</a>
+				</div>
+				<p class="find">Znajdź połączenie</p>
+				<a class="directions__link" href="https://jakdojade.pl" target="_blank">komunikacją miejską</a>
+			<!--<a href="https://jakdojade.pl/?tn=Kaliskiego 2&tc=52.253162:20.899566&cid=3" target="_blank">Warsaw public transport</a>-->
+			</div>
+		</div>
+	</section>
+	
+	<section class="section" id="comiteesSection">
+		<a class="comitees" id="comitees"></a>
+		<h4 class="headerFourth">Komitety</h4>
+		<div class="box comiteesBox">
+			<div class="comiteesBox__container">
+				<div class="comiteesBox__header comiteesBox__header_scientific">
+					<div class="title" id="toogle1">
+						<img class="title__img" src="../static/images/toogle1.png"/>
+						<p class="title__text title__text_white">KOMITET NAUKOWY</p>
+					</div>
+				</div>
+				<div class="comiteesBox__content" id="scientific">
+					<p>Dr hab. inż. Janusz Bogusz, prof. WAT – Przewodniczący</p>
+					<p>Dr hab. inż. Piotr Banasik, prof. AGH</p>
+					<p>Prof. dr hab. inż. Marcin Barlik </p>
+					<p>Prof. dr hab. inż. Andrzej Borkowski</p>
+					<p>Prof. dr hab. inż. Jarosław Bosy</p>
+					<p>Prof. dr hab. Aleksander Brzeziński</p>
+					<p>Prof. dr hab. inż. Mariusz Figurski</p>
+					<p>Prof. dr hab. inż. Bernard Kontny</p>
+					<p>Prof. dr hab. inż. Wiesław Kosek</p>
+					<p>Prof. dr hab. inż. Jan Kryński</p>
+					<p>Prof. dr hab. inż. Wojciech Pachelski</p>
+					<p>Prof. dr hab. inż. Jerzy Rogowski</p>
+					<p>Dr hab. inż. Janusz Walo, prof. PW</p>
+					<p>Dr hab. inż. Paweł Wielgosz, prof UWM</p>
+				</div>
+			</div>
+			<div class="comiteesBox__container">
+				<div class="comiteesBox__header comiteesBox__header_organising">
+					<div class="title" id="toogle2">
+						<img class="title__img" src="../static/images/toogle2.png"/>
+						<p class="title__text title__text_blue">KOMITET ORGANIZACYJNY</p>
+					</div>
+				</div>
+				<div class="comiteesBox__content" id="organising">
+					<p>Dr inż. Anna Kłos – Przewodnicząca</p>
+					<p>Mgr inż. Marta Gruszczyńska</p>
+					<p>Mgr inż. Maciej Gruszczyński</p>
+					<p>Mgr inż. Hanna Kombur</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section section_blue" id="programmeSection">
+		<a class="programme" id="programme"></a>
+		<h4 class="headerFourth headerFourth_white">program</h4>
+		<div class="box programmeBox"> 
+			<p class="programmeBox__text">Poniżej zamieszczony jest program konferencji oraz streszczenia prezentacji.</p>
+			<div class="programmeBox__container">
+			
+				<div class="programmeBox__element">
+					<div class="title" id="agendaHeader">
+						<img id="toogle4" src="../static/images/toogle4.png"/>
+						<p class="title__text title__text_blue">PROGRAM</p>
+					</div>
+					<div class="programmeBox__content" id="agenda">
+						<a class="programmeBox__link_pdf" href="https://drive.google.com/open?id=0B0Hq4aVpKHcfU3lNSXR2TUJCeUE" target="_blank">Pobierz plik PDF</a>
+					</div>
+				</div>
+
+				<div class="programmeBox__element">
+					<div class="title" id="summaryHeader">
+						<img id="toogle4" src="../static/images/toogle4.png"/>
+						<p class="title__text title__text_blue">STRESZCZENIA</p>
+					</div>
+					<div class="programmeBox__content" id="summary">
+						<a class="programmeBox__link_pdf" href="https://drive.google.com/open?id=0B0Hq4aVpKHcfdmFFLWxnc08yZ3M" target="_blank">Pobierz plik PDF</a>
+					</div>
+				</div>
+	
+			</div>
+			<p class="programmeBox__text">Recenzowane materiały konferencyjne zostaną opublikowane w piśmie <a class="programmeBox__link_site" href="http://gc.czasopisma.pan.pl/" target="_blank">Geodesy and Cartography</a></p>
+			<p class="programmeBox__text">(część B listy MNiSW, 13 pkt.)</p>
+		</div>
+	</section>
+	
+	<section class="section" id="registerSection">
+		<a class="register" id="register"></a>
+		<h4 class="headerFourth">rejestracja</h4>
+		<div class="box">
+		 	<form th:action="@{/register#register}" th:object="${conferee}" method="post" class="registrationForm" enctype="multipart/form-data">
+		<!--	<div id="registeredMessage" th:if="${flashMessage}" th:utext="#{${flashMessage}}">register.ok</div> -->
+		 		
+				<input class="registrationForm__input" type="text" th:field="*{name}" placeholder="Imię*" th:errorclass="fieldError"/>
+		<!--	<p class="registrationForm__fieldErrorMessage" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Incorrect name</p> -->
+				
+				<input class="registrationForm__input" type="text" th:field="*{surname}" placeholder="Nazwisko*" th:errorclass="fieldError"/>
+		<!--	<p class="registrationForm__fieldErrorMessage" th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}">Incorrect surname</p>	-->
+				
+				<input class="registrationForm__input" type="email" th:field="*{email}" placeholder="E-mail*" th:errorclass="fieldError"/>
+		<!--	<p class="registrationForm__fieldErrorMessage" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Incorrect email</p>	-->
+				
+				<input class="registrationForm__input" type="text" th:field="*{afiliation}" placeholder="Afiliacja*" th:errorclass="fieldError"/>
+		<!--	<p class="registrationForm__fieldErrorMessage" th:if="${#fields.hasErrors('afiliation')}" th:errors="*{afiliation}">Incorrect afiliation</p> -->
+				
+				<div class="registrationForm__selects">
+					<input class="registrationForm__check" type="checkbox" id="invoiceCheckbox"/>
+					<label class="registrationForm__label" for="invoiceCheckbox">Chcę otrzymać fakturę</label>
+				</div>
+				<div class="registrationForm__invoice" id="invoice">
+					<input class="registrationForm__input" type="text" th:field="*{address}" placeholder="Adres"/>
+					<input class="registrationForm__input" type="text" th:field="*{vat}" placeholder="Nr NIP"/>
+				</div>
+				<div class="registrationForm__selects">
+					<input class="registrationForm__check" type="checkbox" id="vegeCheckbox" th:field="*{meal}" value="vege"/>
+					<label class="registrationForm__label" for="vegeCheckbox">Proszę o posiłek wegetariański</label>
+				</div>
+				<div class="registrationForm__abstract">
+					<p class="registrationForm__text_big">Zgłaszam prezentację:</p>
+					<input class="registrationForm__check" type="radio" id="oralCheckbox" th:field="*{presentation}" value="ustna"/>
+					<label class="registrationForm__label" for="oralCheckbox">Ustną</label>
+					<input class="registrationForm__check" type="radio" id="posterCheckbox"  th:field="*{presentation}" value="poster"/>
+					<label class="registrationForm__label" for="posterCheckbox">Poster</label>
+					<input class="registrationForm__check" type="radio" id="noneCheckbox"  th:field="*{presentation}" value="none" checked="checked"/>
+					<label class="registrationForm__label" for="noneCheckbox">Brak</label>
+					<div class="registrationForm__file" id="file">
+						<p class="registrationForm__text_big">Dodaj streszczenie referatu w formacie PDF (max. 250 słów)</p>
+						<input type="file" name="abstract" accept=".pdf"/>
+						<p class="registrationForm__text_big">Wybierz sesję, do której zgłaszasz prezentację</p>
+						<select class="registrationForm__input" name="session" th:field="*{summary}">
+							<option value="none" selected="selected">WYBIERZ SESJĘ</option>
+							<option value="pierwsza">Sesja 1: „Układy odniesienia”</option>
+							<option value="druga">Sesja 2: „Pole grawitacyjne Ziemi”</option>
+							<option value="trzecia">Sesja 3: „Ruch obrotowy Ziemi i geodynamika”</option>
+							<option value ="czwarta">Sesja 4: „Zastosowania nawigacyjnych systemów satelitarnych"</option>
+							<option value="piąta">Sesja 5: „Teledetekcyjne metody w geodezji”</option>
+						</select>
+					</div>
+				</div>				
+
+				<div class="registrationForm__fee">
+					<p class="registrationForm__text_small">Opłatę rejestracyjną w wysokości: <span> 800 zł (regularny uczestnik)</span> bądź <span>550 zł (student / doktorant)</span> 
+					należy uiścić do 11 sierpnia 2017 r.</p>
+					<p class="registrationForm__text_small account"><b>Nr konta:</b> 60 1030 1016 0000 0000 0873 0005</p>
+					<p class="registrationForm__text_small account"><b>Beneficjent:</b> Wojskowa Akademia Techniczna, ul. gen. Sylwestra Kaliskiego 2, 00-908 Warszawa</p>
+					<p class="registrationForm__text_small account"><b>Tytuł przelewu:</b> “Sympozjum KG PAN, imię i nazwisko uczestnika"</p>
+				</div>
+				<button class="registrationForm__input registrationForm__button" name="register">ZAREJESTRUJ</button>
+			</form> 
+		</div>
+	</section>
+	
+	<section class="section section_grey" id="accommodationSection">
+		<a class="accommodtion" id="accommodation"></a>
+		<h4 class="headerFourth">zakwaterowanie</h4>
+		<div class="box">
+			<div id="accommodationInfo">
+				<p class="accommodationInfo__text">Komet organizacyjny nie zapewnia zakwaterowania, nie jest ono uwzględnione w opłacie rejestracyjnej.</p>
+				<p class="accommodationInfo__text accommodationInfo__text_small">Polecamy noclegi w 
+				<a class="accommodationInfo__link" href="http://www.ibis.com/pl/hotel-2894-ibis-warszawa-centrum-hostel-warszawa-centrum/index.shtml" target="_blank">hotelu IBIS Warszawa Centrum </a> 
+				lub w  
+				<a class="accommodationInfo__link" href="http://www.csk.wat.edu.pl/index.php?option=com_content&amp;view=article&amp;id=3&amp;Itemid=3" target="_blank">Centrum Szkoleniowo-Konferencyjnym WAT.</a></p>
+			</div>
+
+			<div class="hotelBox">
+				<div class="hotelBox__container">
+					<div class="hotelBox__header" id="ibisHeader">
+						<div class="title" id="toogle3">
+							<img class="title__img title__img_displayed" src="../static/images/toogle3.png"/>
+							<p class="title__text">Hotel IBIS</p>
+						</div>
+					</div>
+					<div class="hotelBox__content" id="ibis">
+						<p>Hotel IBIS jest usytuowany w centrum Warszawy. Dojazd na WAT zajmuje jedynie 20 minut bezpośrednim tramwajem (tramwaj nr 20).</p>
+						<p></p>
+						<div class="hotelBox__address">
+							<p>Al. Solidarności 165</p>
+							<p>00-876 Warszawa</p>
+							<p>Tel: +48 22 520 30 00 / Fax: +48 22 520 30 30</p>
+							<p>E-mail: H2894@accor.com</p>
+							<p><img class="hotelBox__img" src="../static/images/location1.png"/>52.237607, 20.982489</p>
+							<a class="accommodationInfo__link" href="http://www.ibis.com/pl/hotel-2894-ibis-warszawa-centrum-hostel-warszawa-centrum/index.shtml" target="_blank">Odwiedź stronę</a>
+						</div>
+					</div>
+				</div>
+				<div class="hotelBox__container">
+					<div class="hotelBox__header" id="mutHeader">
+						<div class="title" id="toogle5">
+							<img class="title__img title__img_displayed" src="../static/images/toogle3.png"/>
+							<p class="title__text">Centrum Szkoleniowe WAT</p>
+						</div>
+					</div>
+					<div class="hotelBox__content" id="mut">
+						<p>Centrum Szkoleniowo-Konferencyjne WAT jest usytuowane na terenie otwartym WAT. Do miejsca konferencji można dojść w 5 minut.</p>
+						<div class="hotelBox__address">
+							<p>Gen. Sylwestra Kaliskiego 9</p>
+							<p>00-908 Warszawa</p>
+							<p>Tel / Fax: +48 261 837 925</p>
+							<p>E-mail: recepcjaDA@wat.edu.pl</p>
+							<p><img class="hotelBox__img" src="../static/images/location1.png"/>52.249880, 20.897556</p>
+							<a class="accommodationInfo__link" href="http://www.csk.wat.edu.pl/index.php?option=com_content&amp;view=article&amp;id=3&amp;Itemid=3" target="_blank">Odwiedź stronę</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section" id="contact">
+		<div class="box contact">
+			<div class="contactInfo">		
+				<p>W razie pytań i wątpliwości prosimy o kontakt:</p>
+				<div class="contactInfo__email">
+					<a class="contactInfo__link" href="mailto:anna.klos@wat.edu.pl">anna.klos@wat.edu.pl</a>
+				</div>
+			</div>
+			<div class="contactLogo">
+				<p>Organizatorzy:</p>
+			 	<div class="contactLogo__element">
+					<a href="http://www.pan.pl/" target="_blank"><img class="contactLogo__pan" src="../static/images/LOGO_PAN_PL.png" alt="pan"/></a>
+					<a href="http://www.wat.edu.pl/" target="_blank"><img class="contactLogo__pan" src="../static/images/LOGO_WAT_PL.png" alt="wat"/></a>
+				</div>	
+			 	<div class="contactlogo__element"> 
+					<a href="http://www.uwm.edu.pl/" target="_blank"><img class="contactLogo__uwm" src="../static/images/LOGO_UWM.jpeg" alt="uwm"/></a>
+					<a href="http://www.upwr.edu.pl/" target="_blank"><img class="contactLogo__uwm" src="../static/images/LOGO_UPWr.png" alt="upwr"/></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" >
+		<div class="box footerBox">
+			<div class="footerBox__authors">
+				<p>Projekt: <a class="footerBox__link" href="http://sylwiakarolina.com/" target="_blank">SYLWIA KAROLINA</a></p>
+			</div>
+			<div class="footerBox__rights">
+				<p>Kod: <a class="footerBox__link" href="http://robotix.com.pl/" target="_blank">ROBOTIX</a></p>			
+			</div>
+		</div>
+	</footer>
+
+
+<script>
+$( "#mobileMenuIcon" ).click(function() {
+  $( "#mobileMenuOpened").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#mobileMenuOpened" ).click(function() {
+  $( "#mobileMenuOpened").hide( "fast" );
+});
+</script>
+
+<script>
+$( "#toogle1" ).click(function() {
+  $( "#scientific").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#toogle2" ).click(function() {
+  $( "#organising").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#agendaHeader" ).click(function() {
+  $( "#agenda").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#summaryHeader" ).click(function() {
+  $( "#summary").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#oralCheckbox" ).click(function() {
+  $( "#file").show( "slow" );
+});
+</script>
+
+<script>
+$( "#posterCheckbox" ).click(function() {
+  $( "#file").show( "slow" );
+});
+</script>
+
+<script>
+$( "#noneCheckbox" ).click(function() {
+  $( "#file").hide( "slow" );
+});
+</script>
+
+<script>
+$( "#invoiceCheckbox" ).click(function() {
+  $( "#invoice").slideToggle( "slow" );
+});
+</script>
+
+<script>
+$( "#toogle3" ).click(function() {
+  $( "#ibis").slideToggle( "fast" );
+});
+</script>
+
+<script>
+$( "#toogle5" ).click(function() {
+  $( "#mut").slideToggle( "fast" );
+});
+</script>
+
+</body>
+
+</html>
+

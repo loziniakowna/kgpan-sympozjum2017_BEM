@@ -1,0 +1,1019 @@
+* {
+  margin: 0;
+  padding: 0;	
+  font-family: 'Open Sans', 'Sans';
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+ }
+
+body {
+	background-color: #4E4E4E;
+	overflow-x: hidden;
+}
+
+.header {
+	background-color: #FFFFFF;
+	position: fixed;
+	width: 100%;
+}
+
+.menu {
+	width: 100%;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar {
+	line-height: 24px;
+	height: 58px;
+}
+
+.navbar__list {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.mobileMenu__list {
+	display: none;
+	list-style-type: none;
+	padding: 0px 15px 0px 15px;
+	border-bottom: 2px solid #59708B;
+}
+
+.mobileMenu {
+	background-color: white;
+}
+
+.mobileMenu__header {
+	padding-bottom:10px;
+	border-bottom: 2px solid #59708B;
+}
+
+.menu__link {
+	text-decoration: none;
+	display: block;
+	font-weight: 400;
+	font-size: 18px;
+	color: #4A4A4A;
+}
+
+.navbar__link {
+	text-align: center;
+	padding: 16px 20px;
+}
+
+.mobileMenu__link {
+	line-height: 36px;
+	padding-bottom: 6px;
+	display:block;
+}
+
+.menu__link:hover, 
+.menu__link:focus,
+.menu__link:active {
+	color: #000000;	
+}
+
+.navbar__link:hover, 
+.navbar__link:focus, 
+.navbar__link:active {
+	border-bottom: 4px solid #59708B;
+}
+
+@media all and (min-width: 720px) {
+	.mobileMenu {
+		display: none;
+	}
+}
+
+@media all and (max-width: 980px) {
+	.menu__link {
+		font-size: 16px;
+	}
+	
+	.navbar__link {
+		padding: 16px 10px;
+	}
+}
+
+@media all and (max-width: 720px) {
+	.navbar,
+	.headerThird {
+		display: none;
+	}
+
+	.mobileMenu__icon {
+		padding-top: 15px;
+		padding-right: 15px;
+		display: flex;
+		float: right;
+	}
+
+	.mobileMenu__info {
+		padding-top: 15px;
+		padding-left: 15px;
+		font-weight: 600;
+		font-size: 12px;
+		color: #4A4A4A;
+		line-height: 17px;
+		text-align: left;
+		display: inline-block;
+		max-width: 150px;
+	}
+}
+
+
+/*SECTIONS*/
+.section {
+	padding-top: 60px;
+	padding-bottom: 84px;
+	border-bottom: 2px solid #D8D8D8;
+	background-color: #FFFFFF;
+}
+
+.section_grey {
+	background-color: #F4F4F4;
+}
+
+.section_blue {
+	background-color: #59708B;
+}
+
+.venue, 
+.comitees, 
+.programme, 
+.register,
+.accommodation {
+	padding-top: 101px;
+	height: 0px;
+}
+
+@media all and (max-width: 800px) {
+	.venue, 
+	.comitees, 
+	.programme, 
+	.register,
+	.accommodation {
+		padding-top: 56px;
+		height: 0px;
+	}
+}
+
+/* SECTION HOME*/
+
+.home {
+	padding-top: 108px;
+	padding-bottom: 96px;
+	min-height: 470px;
+	background: url(../images/NASA.jpg) center;
+	border-top: 1px solid black;
+	text-align: center;
+}
+
+.home__box {
+	max-width: 804px;
+	padding: 0px 12px 0px 12px;
+	text-align: center;
+	margin: auto;
+}
+
+.home__header {
+	background: #FFFFFF;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.61);
+	margin: auto;
+	text-align: center;
+	color: #4A4A4A;
+	padding: 24px 24px 36px 24px;
+}
+
+.headerFirst {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41px;
+	padding: 32px 0px 0px 0px;
+}
+
+.headerSecond {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 36px;
+}
+
+.headerThird {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+	padding-top: 36px;
+}
+
+.home__text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 19px;
+	padding-top: 60px;
+}
+
+.logo {
+	text-align: center;
+	margin: auto;
+	padding-top: 24px;
+	display: inline-block;
+}
+
+.logo__pan,
+.logo__wat {
+	height: 70px;
+	margin-left: 12px; 
+	margin-right: 12px;
+	vertical-align: middle;
+}
+
+.logo__uwm {
+	height: 50px;
+	margin-left: 12px; 
+	margin-right: 12px;
+	vertical-align: middle;
+}
+
+
+@media all and (max-width: 560px) {
+	.home {
+		padding-top: 84px;
+		padding-bottom: 24px;
+	}
+
+	.home__header {
+		padding-bottom: 36px;
+	}
+
+	.headerFirst {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 26px;
+		padding-top: 12px;
+	}
+
+	.headerSecond {
+		font-size: 16px;
+		padding-top: 24px;
+	}
+
+	.home__text {
+		font-size: 14px;
+		letter-spacing: 0px;
+		padding-top: 24px;
+	}
+
+	.logo {
+		display: inline-block;
+	}
+
+	.logo__pan, 
+	.logo__wat,
+	.logo__uwm {
+		height: 45px;
+		margin-left: 6px; 
+		margin-right: 6px;
+		margin-bottom: 6px;
+	}
+
+	.section {
+		padding-top: 12px;
+		padding-bottom: 36px;
+	}
+}
+
+/* SECTION KEY DATES*/
+
+.headerFourth { 
+	font-size: 30px;
+	color: #283D50; 
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 48px;
+}
+
+.box {
+	max-width: 950px;
+	margin: auto;
+	padding: 0px 12px 0px 12px;
+} 
+
+.keyDatesBox {
+	min-height: 110px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 12px 0px 12px;
+}
+
+.keyDatesBox__container {
+	width: 275px;
+	height: 110px;
+	float: left;
+	line-height: 24px;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin: 0px 10px 12px 10px;
+}
+
+.keyDatesBox__header {
+	background: #59708B;
+	padding: 8px 10px 10px 10px;
+}
+
+.keyDatesBox__content {
+	background: #F0F0F0;
+	font-weight: 400;
+	color: #4A4A4A;
+	height: 68px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 68px;
+}
+
+.keyDatesBox__contentText {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 24px;
+}
+
+
+@media all and (max-width: 560px) {
+	.headerFourth { 
+		font-size: 20px;
+		padding-top: 12px;
+		padding-bottom: 24px;
+	}
+	
+	.keyDatesBox__container {
+		font-size: 16px;
+		height: 76px;
+	}
+
+	.keyDatesBox__header {
+		height: 26px;
+		line-height: 26px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.keyDatesBox__content {
+		height: 50px;
+		line-height: 50px;
+	}
+}
+
+
+/* SECTION VENUE*/
+
+
+.venueBox {
+	min-height: 285px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.venueBox:before {
+	content: "";
+  	display: inline-block;
+  	vertical-align: middle;
+  	height: 100%;
+}
+
+.venueBox__content {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px;
+}
+
+.map {
+	max-width: 470px;
+}
+
+iframe {
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.3);
+	width: 100%;
+}
+
+.directions {
+	max-width: 400px;
+	text-align: center;
+	font-weight: 400; 
+	font-size: 16px;
+	color: #4A4A4A; 
+	line-height: 22px;
+}
+
+.directions__address {
+	padding-bottom: 36px;
+}
+
+.directions__WAT {
+	color: #59708B; 
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.directions__img {
+	width: 20px;
+	vertical-align: middle;
+}
+
+.directions__link,
+.directions__link:visited {
+	font-weight: 600;
+	font-size: 16px;
+	color: #59708B;
+	padding-bottom: 12px;
+	line-height: 26px;
+}
+
+
+@media all and (min-width: 500px) {
+    .map {
+        width: 470px;
+    }
+}
+
+@media all and (max-width: 560px) {
+	iframe {
+		height: 200px;
+	}
+
+	.map {
+		padding: 0px;
+		margin-bottom: 12px;
+	}
+
+	.directions {
+		font-size: 14px;
+	}
+
+	.directions__address {
+		padding-bottom: 24px;
+	}
+
+	.directions__link {
+		font-size: 14px;
+		padding-top: 12px;
+	}
+}
+
+/*SECTION COMITEES*/
+
+.comiteesBox {
+	min-height: 512px;
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.comiteesBox__container {
+	width: 320px;
+	text-align: center;
+	margin: 0px 12px 12px 12px;
+}
+
+.comiteesBox__header {
+	padding: 8px 10px 10px 10px;
+}
+
+.comiteesBox__header_organising {
+	background: #B5C1CE;
+}
+
+.comiteesBox__header_scientific {
+	background: #59708B;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 30px;
+	padding: 0px 12px 0px 12px;
+	cursor: pointer;
+}
+
+.title__text {
+	padding: 0px 1px 0px 12px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.title__text_white {
+	color: #FFFFFF;
+}
+
+.title__text_blue {
+	color: #283D50;
+}
+
+.comiteesBox__content {
+	background: #F0F0F0;
+	font-weight: 400;
+	color: #4A4A4A;
+	padding: 24px 24px 24px 24px;
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 28px;
+	text-align: left;
+}
+
+@media all and (min-width: 561px) {
+	.title__img {
+		display: none;
+	}
+}
+
+@media all and (max-width: 560px) {
+	.comiteesBox {
+		min-height: 100px;
+	}
+
+	.comiteesBox__header {
+		font-size: 16px;
+		padding: 5px 10px 5px 10px;
+	}
+
+	.comiteesBox__content {
+		display: none;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.title__img {
+		width: 25px;
+		height: 25px;
+		vertical-align: middle;
+	}
+	
+	.title__text {
+		font-size: 16px;
+		padding: 0pz 6px 0px 6px;
+	}
+}
+
+
+/*SECTION PROGRAMME */
+
+.headerFourth_white {
+	color: #FFFFFF;
+}
+
+.programmeBox {
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.programmeBox__text {
+	color: #CCD5DA;
+	text-align: center;
+	line-height: 26px;
+	padding: 0px 12px 0px 12px;
+}
+
+.programmeBox__link_site,
+.programmeBox__link_site:visited {
+	color: #CCD5DA;
+}
+
+.programmeBox__container {
+	width: 604px;
+	text-align: center;
+	margin: 12px 12px 12px 12px;
+}
+
+.programmeBox__element {
+	background: #CCD5DA;
+	margin-top: 12px;
+}
+
+.programmeBox__content {
+	background: #f6f6f6;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #283D50;
+	line-height: 32px;
+	list-style-type: none;
+	border-top: 1px solid #CCD5DA;
+}
+
+.programmeBox__link_pdf,
+.programmeBox__link_pdf:visited {
+	font-size: 16px;
+	font-weight: 400;
+	color: #283D50;
+}
+
+@media all and (min-width: 561px) {
+	#toogle4 {
+		display: none;
+	}
+}
+
+
+@media all and (max-width: 560px) {
+
+	.programmeBox__content {
+		font-size: 14px;
+		display: none;
+	}	
+}
+
+
+/*SECTION REGISTRATION*/
+
+.registrationForm {
+	max-width: 488px;
+	padding: 0px 12px 0px 12px;
+	margin: auto;
+}
+
+.registrationForm__text_small {
+	font-weight: 400;
+	font-size: 14px;
+	font-style: italic;
+	color: #4A4A4A;
+	text-align: justify;
+	padding-bottom: 4px;
+}
+
+.registrationForm__text_big {
+	font-size: 16px;
+	font-style: normal;
+	padding: 12px 0px 0px 0px;
+	line-height: 31px;
+	display: inline-block;
+	color: #4A4A4A;
+	text-align: justify;
+}
+
+.registrationForm__label {
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+	color: #4A4A4A;
+	vertical-align: middle;
+}
+
+
+.registrationForm__input {
+	width: 100%;
+	background: #FFFFFF;
+	border: 2px solid #C3C6CA;
+	padding: 2%; 
+	margin-top: 12px;
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: italic;
+	color: #4A4A4A;
+	letter-spacing: 0;
+	display: block; 
+}
+
+.registrationForm__selects {
+	margin-top: 6px;
+}
+
+.registrationForm__check {	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.registrationForm__button {
+	width: 100%;
+	background: #59708B;
+	height: 42px; 
+	font-weight: 600;
+	font-size: 20px;
+	font-style: normal;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+ 
+.registrationForm__input:focus {
+	border: 2px solid #283D50;
+	font-weight: 500;
+	font-size: 16px;
+	font-style: normal;
+	color: #000000;
+	box-shadow: none;
+}
+
+.registrationForm__message {
+	font-weight: 500;
+	font-size: 24px;
+	color: #59708B; 
+	text-align: center;
+	padding-bottom:24px;
+}
+/*
+#registerSection .fieldError {
+	border: 2px solid #D02D2D;
+}*/
+
+.registrationForm__fieldErrorMessage {
+	font-weight: 400;
+	font-size: 12px;
+	font-style: italic;
+	color: #D02D2D; 
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.registrationForm__abstract {
+	text-align: left;
+}
+
+
+.registrationForm__file, 
+.registrationForm__invoice {
+	display: none;
+}
+
+.registrationForm__fee {
+	text-align: left;
+	margin: 24px 0px 24px 0px;
+}
+
+.registrationForm__fee span {
+	color: #59708B;
+	font-weight: 700;
+}
+
+
+@media all and (max-width: 560px) {
+
+	.registrationForm__text_small {
+		font-size: 12px;
+	}
+
+	.registrationForm__text_big {
+		font-size: 14px;
+		line-height: 16px;
+		display: block;
+	}
+	
+	.registrationForm__button {
+		font-size: 16px;
+	}
+
+	.registrationForm__message {
+	font-size: 16px;
+	}
+}
+
+/*ACCOMMODATION*/
+
+.accommodationInfo__text {
+	font-weight: 700;
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 22px;
+	text-align: center;
+	padding-bottom: 12px;
+}
+
+.accommodationInfo__text_small{
+	font-weight: 400; 
+	font-size: 16px;
+}
+
+.accommodationInfo__link,
+.accommodationInfo__link:visited {
+	font-weight: 600;
+	font-size: 16px;
+	color: #59708B;
+	padding-bottom: 12px;
+}
+
+.hotelBox {
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 36px 12px 0px 12px;
+}
+
+.hotelBox__container {
+	width: 400px;
+	text-align: center;
+	margin: 0px 12px 12px 12px;
+}
+
+.hotelBox__header {
+	padding: 8px 10px 10px 10px;
+	background: #FFFFFF;
+	border: 2px solid #59708B;
+	min-height: 42px; 
+	color: #59708B;
+}
+
+
+.title__img_displayed {
+	display: inline;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+
+.hotelBox__content {
+	display: none;
+	background: #FFFFFF;
+	font-weight: 400;
+	color: #4A4A4A;
+	padding: 24px 32px 24px 32px;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 26px;
+	text-align: left;
+}
+
+.hotelBox__address {
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 12px;
+}
+
+.hotelBox__img {
+	width: 24px;
+	vertical-align: bottom;
+}
+
+
+@media all and (max-width: 560px) {
+	.hotelBox {
+		min-height: 100px;
+	}
+
+	.accommodationInfo__text {
+		font-size: 16px;
+	}
+
+	.accommodationInfo__text_small,
+	.accommodationInfo__link,
+	.accommodationInfo__:visited {
+		font-size: 14px;
+	}
+
+	.hotelBox__header {
+		font-size: 16px;
+		padding: 5px 10px 5px 10px;
+	}
+
+	.hotelBox__content {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		font-size: 14px;
+	}
+}
+
+/*CONTACT SECTION*/
+
+.contact {
+	color: #4A4A4A;
+	padding: 0px 12px 0px 12px;
+}
+
+.contactInfo {
+	width: 55%; 
+	display: inline-block;
+	padding: 12px 12px 12px 12px;
+	vertical-align: top;
+	font-size: 18px;
+}
+
+.contactInfo__link {
+	text-decoration: none;	
+	font-weight: 700;
+	color: #59708B;
+}
+
+.contactInfo__email {
+	padding-top: 26px;
+	
+}
+
+.contactLogo {
+	min-width: 33%;
+	margin: auto;
+	padding: 12px 12px 12px 12px;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.contactLogo__element {
+	width: 100%;
+}
+
+.contactLogo__uwm {
+	padding-top: 10px;
+	padding-right: 12px;
+	height: 60px;
+} 
+
+.contactLogo__pan {
+	padding-top: 10px;
+	padding-right: 12px;
+	height: 70px;
+}
+
+@media all and (max-width: 670px) {
+	.contactInfo {
+    	width: 100%;
+		text-align: center;
+		padding-left: 12px;
+		padding-right: 12px;
+		font-size: 16px;
+	}
+
+	.contactInfo__email {
+		padding-top: 12px;
+	}
+
+	.contactLogo {
+		width: 100%;
+		text-align: center;
+		float: none;
+		display: inline-block;
+		font-size: 12px;
+	}
+}
+
+
+/*STOPKA*/
+
+.footer {
+	padding-top: 24px;
+	padding-bottom: 36px;
+}
+
+.footerBox {
+	overflow: hidden;
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.footerBox__authors {
+	float: left;
+	width: 60%;
+	padding-left: 12px;
+}
+
+.footerBox__rights {
+	float: right;
+	width: 32%;
+	text-align: right;
+	padding-right: 12px;
+}
+
+.footerBox__link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+@media all and (max-width: 560px) {
+	.footerBox {
+		font-size: 14px;
+	}
+	
+	.footerBox__authors, 
+	.footerBox__rights {
+		display: inline-block;
+		text-align: left;
+		width: 100%;
+	}
+
+	.footerBox__authors{
+		padding-bottom: 12px;
+	}
+
+	.footerBox__rights {
+		padding-bottom: 0px;
+		padding-left: 12px;
+	}
+}
+
